@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+    display: flex; /* Habilita el modelo flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Ajustar el contenedor principal */
+.container {
+    width: 45%; /* Establece el ancho del contenedor al 30% */
+    max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
+    padding: 20px; /* Agrega espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
+}
+
+/* Estilo para las tarjetas */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto */
+    height: 200px; /* Altura fija para las tarjetas */
+    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+}
+
+/* Estilo para las imágenes */
+.img-fluid {
+    display: block;
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+    max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: 200px; /* Altura uniforme para pantallas grandes */
+    object-fit: cover; /* Ajusta la imagen para que se recorte proporcionalmente */
+}
+
+/* Media query para pantallas pequeñas (teléfonos) */
+@media (max-width: 576px) {
+    .container {
+        width: 90%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+    }
+    .card {
+        height: auto; /* Permite que la altura sea dinámica */
+        padding: 20px; /* Agrega espacio interno para mejorar la legibilidad */
+    }
+    .img-fluid {
+        height: auto; /* Permite que la altura sea automática */
+        max-height: 150px; /* Ajusta la altura máxima para pantallas pequeñas */
+    }
+}
