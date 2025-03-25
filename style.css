@@ -1,119 +1,175 @@
-body {
-    background-color: #f8f9fa;
-    display: flex; /* Habilita el modelo flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-    margin: 0; /* Elimina márgenes predeterminados */
-}
-
-/* Ajustar el contenedor principal */
-.container {
-    width: 40%; /* Ancho del contenedor */
-    max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
-    padding: 20px; /* Agrega espacio interno */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    background-color: white; /* Fondo blanco para el contenido */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
-}
-
-.textgrey {
-    color: grey;
-}	
-
-/* Estilo para las tarjetas */
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Centra el texto */
-    height: 200px; /* Altura fija para las tarjetas */
-    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    margin-bottom: 20px; /* Espaciado entre tarjetas */
-}
-
-/* Estilo para las imágenes */
-.img-fluid {
-    display: block;
-    margin: 0 auto; /* Centra las imágenes horizontalmente */
-    max-width: 100%; /* Asegura que las imágenes sean responsivas */
-    height: 200px; /* Altura uniforme para pantallas grandes */
-    object-fit: cover; /* Ajusta la imagen para que se recorte proporcionalmente */
-}
-
-/* Media query para pantallas pequeñas (teléfonos) */
-@media (max-width: 576px) {
-    .container {
-        width: 90%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
-    }
-    .card {
-        height: auto; /* Permite que la altura sea dinámica */
-        padding: 20px; /* Agrega espacio interno para mejorar la legibilidad */
-    }
-    .img-fluid {
-        height: auto; /* Permite que la altura sea automática */
-        max-height: 150px; /* Ajusta la altura máxima para pantallas pequeñas */
-    }
-}
-
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-sections {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-}
-
-.footer-column h3 {
-    margin-top: 0;
-    font-size: 1.2em;
-}
-
-.footer-column ul {
-    list-style-type: none;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.footer-column ul li {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(24, 110, 81);
     margin-bottom: 10px;
 }
 
-.full-width {
-    flex: 1 1 100%;
+h2 {
+    font-size: 20px;
+    color: rgb(163, 158, 158);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.dev-section {
+    font-size: 18px;
+    color: black;
+    margin-left: 13%;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: rgb(25, 156, 156);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+}
+
+.work-item .description {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 16%;
+    margin-right: 25px;
+}
+
+.work-item .visual {
+    flex: 1;
+    display: flex;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.work-item .visual img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+}
+
+.item-1 {
+    background: #F5EEF5;
+    color: black;
+}
+
+.item-2 {
+    background: #FAF5F3;
+    color: black;
+}
+
+.item-3 {
+    background: #F2F9F8;
+    color: black;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.footer-block {
+    flex: 1;
+    text-align: left;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-block h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-block ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-    .footer-sections {
+    .work-item {
         flex-direction: column;
-        align-items: center;
-        }
-    .footer-column {
+        padding: 15px;
+    }
+
+    .work-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .work-item .visual {
+        order: 1;
+    }
+
+    .work-item .description {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .work-item .visual img {
         width: 100%;
-        }
-    .half-width {
-        flex: 1 1 48%;
-        }
+        max-width: 300px;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: left;
+    }
+
+    .footer-block {
+        text-align: left;
+    }
 }
