@@ -9,7 +9,7 @@ body {
 
 /* Ajustar el contenedor principal */
 .container {
-    width: 45%; /* Establece el ancho del contenedor al 30% */
+    width: 40%; /* Ancho del contenedor */
     max-width: 100%; /* Asegura que no exceda el ancho de la pantalla */
     padding: 20px; /* Agrega espacio interno */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
@@ -17,6 +17,10 @@ body {
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
 }
+
+.textgrey {
+    color: grey;
+}	
 
 /* Estilo para las tarjetas */
 .card {
@@ -54,4 +58,62 @@ body {
         height: auto; /* Permite que la altura sea automática */
         max-height: 150px; /* Ajusta la altura máxima para pantallas pequeñas */
     }
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-sections {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+        }
+    .footer-column {
+        width: 100%;
+        }
+    .half-width {
+        flex: 1 1 48%;
+        }
 }
