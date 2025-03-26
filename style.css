@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -5,46 +6,48 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fdfdfd;
+    line-height: 1.6;
 }
 
 h1 {
-    font-size: 50px;
-    color: rgb(24, 110, 81);
-    margin-bottom: 10px;
+    font-size: 48px;
+    color: #1a785a;
+    margin-bottom: 12px;
 }
 
 h2 {
-    font-size: 20px;
-    color: rgb(163, 158, 158);
-    margin-bottom: 10px;
+    font-size: 22px;
+    color: #6a6a6a;
+    margin-bottom: 12px;
 }
 
 h3 {
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 10px;
+    font-size: 38px;
+    color: #111;
+    margin-bottom: 12px;
 }
 
 .dev-section {
     font-size: 18px;
-    color: black;
-    margin-left: 13%;
-    padding: 15px;
+    color: #222;
+    margin-left: 14%;
+    padding: 18px;
 }
 
 header {
     text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: rgb(25, 156, 156);
+    padding: 22px;
+    background-color: #fff;
+    color: #1f9b9b;
 }
 
 .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .work-item {
@@ -52,94 +55,94 @@ header {
     align-items: center;
     background: #fff;
     width: 100%;
+    padding: 15px;
 }
 
 .work-item .description {
     flex: 1;
-    max-width: 400px;
-    margin-left: 16%;
-    margin-right: 25px;
+    max-width: 420px;
+    margin-left: 14%;
+    margin-right: 22px;
 }
 
 .work-item .visual {
     flex: 1;
     display: flex;
-    max-width: 600px;
-    margin-top: 20px;
+    max-width: 580px;
+    margin-top: 18px;
 }
 
 .work-item .visual img {
     width: 100%;
-    max-width: 350px;
-    margin-bottom: 20px;
-    margin-left: 35%;
+    max-width: 340px;
+    margin-bottom: 18px;
+    margin-left: 30%;
+    border-radius: 5px;
 }
 
 .item-1 {
-    background: #F5EEF5;
+    background: #EFE5EF;
     color: black;
 }
 
 .item-2 {
-    background: #FAF5F3;
+    background: #F8F1EE;
     color: black;
 }
 
 .item-3 {
-    background: #F2F9F8;
+    background: #E8F6F4;
     color: black;
 }
 
+/* Centrar el footer y su contenido */
 footer {
-    background-color: #000000;
-    color: white;
-    padding: 40px 20px;
+    text-align: center; /* Centra el texto dentro del footer */
+    background-color: #111; /* Fondo oscuro para el footer */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
 }
 
 .footer-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 60px;
-    text-align: center;
+    display: flex; /* Habilita flexbox para organizar los bloques */
+    justify-content: center; /* Centra los bloques horizontalmente */
+    gap: 40px; /* Espaciado entre los bloques */
+    flex-wrap: wrap; /* Permite que los bloques se ajusten en varias filas si es necesario */
+    margin-top: 20px; /* Espaciado superior */
 }
 
 .footer-block {
-    flex: 1;
-    text-align: left;
-    min-width: 200px;
-    margin-bottom: 20px;
+    text-align: left; /* Alinea el texto dentro de cada bloque a la izquierda */
+    min-width: 150px; /* Ancho mínimo para los bloques */
 }
 
 .footer-block h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 16px; /* Tamaño de fuente para los títulos */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
 .footer-block ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el padding interno */
 }
 
 .footer-block ul li {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 14px; /* Tamaño de fuente para los elementos de la lista */
+    margin: 5px 0; /* Espaciado entre los elementos */
 }
 
 span {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
+    color: white;
+    font-size: 22px;
     text-align: left;
-    margin-left: 60px;
-    margin-bottom: 20px;
+    margin-left: 50px;
 }
 
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .work-item {
         flex-direction: column;
-        padding: 15px;
+        padding: 18px;
     }
 
     .work-item:nth-child(even) {
@@ -157,15 +160,15 @@ span {
 
     .work-item .visual img {
         width: 100%;
-        max-width: 300px;
-        margin-left: 3%;
-        margin-top: 10px;
+        max-width: 290px;
+        margin-left: 5%;
+        margin-top: 12px;
     }
 
     .footer-navigation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 28px;
         text-align: left;
     }
 
@@ -173,3 +176,4 @@ span {
         text-align: left;
     }
 }
+
