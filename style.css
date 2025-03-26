@@ -5,30 +5,35 @@
     box-sizing: border-box;
 }
 
+/* Estilo general del cuerpo */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #fdfdfd;
     line-height: 1.6;
 }
 
+/* Estilo para el título principal */
 h1 {
     font-size: 48px;
     color: #1a785a;
     margin-bottom: 12px;
 }
 
+/* Estilo para subtítulos */
 h2 {
     font-size: 22px;
     color: #6a6a6a;
     margin-bottom: 12px;
 }
 
+/* Estilo para títulos secundarios */
 h3 {
     font-size: 38px;
     color: #111;
     margin-bottom: 12px;
 }
 
+/* Estilo para la sección de desarrollo móvil */
 .dev-section {
     font-size: 18px;
     color: #222;
@@ -36,6 +41,7 @@ h3 {
     padding: 18px;
 }
 
+/* Estilo para el encabezado */
 header {
     text-align: center;
     padding: 22px;
@@ -43,6 +49,7 @@ header {
     color: #1f9b9b;
 }
 
+/* Estilo para la sección del portafolio */
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -50,6 +57,7 @@ header {
     gap: 20px;
 }
 
+/* Estilo para cada elemento del portafolio */
 .work-item {
     display: flex;
     align-items: center;
@@ -58,6 +66,7 @@ header {
     padding: 15px;
 }
 
+/* Estilo para la descripción dentro de los elementos del portafolio */
 .work-item .description {
     flex: 1;
     max-width: 420px;
@@ -65,6 +74,7 @@ header {
     margin-right: 22px;
 }
 
+/* Estilo para la sección visual (imágenes) dentro de los elementos del portafolio */
 .work-item .visual {
     flex: 1;
     display: flex;
@@ -72,6 +82,7 @@ header {
     margin-top: 18px;
 }
 
+/* Estilo para las imágenes dentro de la sección visual */
 .work-item .visual img {
     width: 100%;
     max-width: 340px;
@@ -80,16 +91,19 @@ header {
     border-radius: 5px;
 }
 
+/* Estilo para el primer elemento del portafolio */
 .item-1 {
     background: #EFE5EF;
     color: black;
 }
 
+/* Estilo para el segundo elemento del portafolio */
 .item-2 {
     background: #F8F1EE;
     color: black;
 }
 
+/* Estilo para el tercer elemento del portafolio */
 .item-3 {
     background: #E8F6F4;
     color: black;
@@ -97,40 +111,46 @@ header {
 
 /* Centrar el footer y su contenido */
 footer {
-    text-align: center; /* Centra el texto dentro del footer */
-    background-color: #111; /* Fondo oscuro para el footer */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 20px;
 }
 
+/* Estilo para la navegación dentro del footer */
 .footer-navigation {
-    display: flex; /* Habilita flexbox para organizar los bloques */
-    justify-content: center; /* Centra los bloques horizontalmente */
-    gap: 40px; /* Espaciado entre los bloques */
-    flex-wrap: wrap; /* Permite que los bloques se ajusten en varias filas si es necesario */
-    margin-top: 20px; /* Espaciado superior */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+/* Estilo para cada bloque dentro del footer */
 .footer-block {
-    text-align: left; /* Alinea el texto dentro de cada bloque a la izquierda */
-    min-width: 150px; /* Ancho mínimo para los bloques */
+    text-align: left;
+    min-width: 150px;
 }
 
+/* Estilo para los títulos dentro de los bloques del footer */
 .footer-block h4 {
-    font-size: 16px; /* Tamaño de fuente para los títulos */
-    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
+/* Estilo para las listas dentro de los bloques del footer */
 .footer-block ul {
-    list-style: none; /* Elimina los puntos de las listas */
-    padding: 0; /* Elimina el padding interno */
+    list-style: none;
+    padding: 0;
 }
 
+/* Estilo para los elementos de las listas dentro del footer */
 .footer-block ul li {
-    font-size: 14px; /* Tamaño de fuente para los elementos de la lista */
-    margin: 5px 0; /* Espaciado entre los elementos */
+    font-size: 14px;
+    margin: 5px 0;
 }
 
+/* Estilo para el texto dentro del footer */
 span {
     color: white;
     font-size: 22px;
@@ -140,24 +160,29 @@ span {
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+    /* Ajuste de los elementos del portafolio en pantallas pequeñas */
     .work-item {
         flex-direction: column;
         padding: 18px;
     }
 
+    /* Ajuste para los elementos pares del portafolio */
     .work-item:nth-child(even) {
         flex-direction: column;
     }
 
+    /* Ajuste para la sección visual en pantallas pequeñas */
     .work-item .visual {
         order: 1;
     }
 
+    /* Ajuste para la descripción en pantallas pequeñas */
     .work-item .description {
         order: 1;
         margin-left: 0;
     }
 
+    /* Ajuste para las imágenes en pantallas pequeñas */
     .work-item .visual img {
         width: 100%;
         max-width: 290px;
@@ -165,6 +190,7 @@ span {
         margin-top: 12px;
     }
 
+    /* Ajuste para la navegación del footer en pantallas pequeñas */
     .footer-navigation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -172,6 +198,7 @@ span {
         text-align: left;
     }
 
+    /* Ajuste para los bloques del footer en pantallas pequeñas */
     .footer-block {
         text-align: left;
     }
